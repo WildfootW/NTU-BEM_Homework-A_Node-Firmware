@@ -42,6 +42,7 @@ int main(void)
         usart.put_uint16(sensor_light_value);
 //        char str[] = "WildfootW\n";
 //        usart.put_str(str);
+        usart.put_char('\n');
     }
 }
 
