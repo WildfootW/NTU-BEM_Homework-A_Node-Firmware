@@ -43,14 +43,27 @@ void USART<baud_rate>::initial()
 }
 
 template <uint32_t baud_rate>
+void USART<baud_rate>::put_char(char c)
+{
+    while(!(UCSR0A & (1 << UDRE0)));
+    UDR0 = c;
+}
+
+template <uint32_t baud_rate>
 void USART<baud_rate>::put_str(char* str_ptr)
 {
     while(*str_ptr != '\0')
     {
-        while(!(UCSR0A & (1 << UDRE0)));
-        UDR0 = *str_ptr;
+        put_char(*str_ptr);
         ++str_ptr;
     }
+}
+
+template <uint32_t baud_rate>
+void USART<baud_rate>::put_uint16(const uint16_t& num)
+{
+    if(num >= 10) put_uint16(num / 10);
+    put_char('0' + (num % 10));
 }
 
 #endif //USART_CPP

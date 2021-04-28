@@ -41,7 +41,7 @@ void ADConverter::select_input_channel(ADConverterMUX mux)
     // 0011 ADC3
     // 0100 ADC4
     // 0101 ADC5
-    ADMUX &= 0b11110000;
+    ADMUX &= 0b11110000; // clear MUX channel selection
     ADMUX |= static_cast<uint8_t>(mux);
 }
 void ADConverter::clear_interrupt_flag()

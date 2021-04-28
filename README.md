@@ -1,6 +1,6 @@
 # NTU-BEM-Lab Homework-A Sensor-Node-Firmware
 
-# Todo
+# Todoist
 
 # Reference
 ## XBee

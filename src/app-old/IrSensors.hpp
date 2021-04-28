@@ -6,8 +6,8 @@
  *
  */
 
-#ifndef SENSORS_H
-#define SENSORS_H
+#ifndef IRSENSORS_H
+#define IRSENSORS_H
 
 #include <stdint.h>
 #include "BasicSensor.hpp"
@@ -38,4 +38,4 @@ private:
     uint8_t distance;
 };
 
-#endif //SENSORS_H
+#endif // IRSENSORS_H

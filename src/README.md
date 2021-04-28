@@ -1,6 +1,9 @@
 # Source Code
 ###### tags: `readme`
 
+# Todoist
+* Modify Millis to Overflow
+
 ## Timer
 Crystal 16MHz
 
@@ -145,6 +148,11 @@ My experience: 1 MHz 9600 garbled, but 16 MHz 115200 Successed.
 ### Power
 * [Feeding power to Arduino: the ultimate guide](https://www.open-electronics.org/the-power-of-arduino-this-unknown/)
 > Vin socket: as said before, this one can be useful as input if an external voltage is needed and you only have 6 V available, in fact the Vin socket bypasses the protection diode and the regulator may operate properly; or it may be useful to draw the voltage coming from the JACK socket;
+
+### millis
+* [GitHub -  zkemble / millis](https://github.com/zkemble/millis)
+    * [Millisecond tracking library for AVR](https://blog.zakkemble.net/millisecond-tracking-library-for-avr/)
+    * Library Docs using Doxygen
 
 ## AVR Debug
 * [AVR Debugging on Linux (with debugWire)](http://luniks.net/avr-debug.jsp)

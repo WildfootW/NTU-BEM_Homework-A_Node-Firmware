@@ -17,7 +17,9 @@ class USART
 public:
     USART(){}
     void initial();
+    void put_char(char c);
     void put_str(char* str_ptr);
+    void put_uint16(const uint16_t& num);
 private:
 };
 
