@@ -1,5 +1,4 @@
 # Source Code
-###### tags: `readme`
 
 ## Timer
 Crystal 16MHz
@@ -141,6 +140,11 @@ typedef unsigned long int     uint32_t
 * [ UART Not working with ATMEGA328P ](https://www.avrfreaks.net/forum/uart-not-working-atmega328p)
 > change the AVR code to send nothing but 'U' (because 'U' with 8-N-1 is a constant 0101010101010.. pattern) and then measure the TXD pulse width. is that 104us. If it isn't then either your UBRR code is wrong or your assumption about `F_CPU` is.
 My experience: 1 MHz 9600 garbled, but 16 MHz 115200 Successed.
+* [USART data garbled; probably a timing/clock issue](https://www.reddit.com/r/avr/comments/4wlwhl/usart_data_garbled_probably_a_timingclock_issue/)
+* [avr_328p_usart/usart/usart.c](https://github.com/johncobb/avr_328p_usart/blob/master/usart/usart.c)
+
+### XBee
+* [atmega-xbee-digimesh/xbee.h](https://github.com/liberza/atmega-xbee-digimesh/blob/master/xbee.h)
 
 ### Power
 * [Feeding power to Arduino: the ultimate guide](https://www.open-electronics.org/the-power-of-arduino-this-unknown/)
